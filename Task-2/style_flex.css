@@ -1,0 +1,41 @@
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.flex-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: #a7d9ff;
+  min-height: 100px;
+  grid-area: header;
+}
+main {
+  display: flex;
+  background: #fffcf6;
+  flex: 1;
+}
+section {
+  flex: 3;
+}
+nav,
+aside {
+  flex: 1;
+}
+nav {
+  background: #ffb1a7;
+}
+aside {
+  background: #ffc518;
+}
+footer {
+  min-height: 100px;
+  background: #44ff00;
+}
+@media only screen and (max-width: 550px) {
+  main {
+    flex-direction: column;
+  }
+}
