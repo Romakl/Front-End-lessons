@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <div class="registration">
+      <header class="header">
+        <h1 class="header-create-account">Create account</h1>
+      </header>
+      <main class="main">
+        <form action="#" method="post" class="form-registration">
+          <div class="main-firstname">
+            <label class="form-label" for="firstname">Firstname</label>
+            <input class="form-input" type="text" id="firstname" />
+          </div>
+
+          <div class="main-lastname">
+            <label class="form-label"  for="lastname" >Lastname</label>
+            <input class="form-input" type="text" id="lastname" />
+          </div>
+
+          <div class="fullsize-input">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" />
+          </div>
+
+          <div class="main-password">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-input" type="password" id="password" />
+          </div>
+
+          <div class="main-confirm-password">
+            <label class="form-label" for="confirm-password"
+              >Confirm-password</label
+            >
+            <input class="form-input" type="password" id="confirm-password" />
+          </div>
+
+          <div class="main-gender">
+            <label class="form-label">Gender</label>
+            <div class="options">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" checked />
+              <label class="form-label" for="female">Female</label>
+              <input
+                class="form-input"
+                type="radio"
+                name="gender"
+                id="female"
+              />
+            </div>
+          </div>
+
+          <div class="main-hobbies">
+            <label>Hobbies</label>
+            <div class="options">
+              <label class="form-label" for="music">Music</label>
+              <input
+                class="form-input"
+                type="checkbox"
+                name="music"
+                id="hobby"
+              />
+              <label class="form-label" for="sports">Sports</label>
+              <input
+                class="form-input"
+                type="checkbox"
+                name="sports"
+                id="hobby"
+              />
+              <label class="form-label" for="travel">Traver</label>
+              <input
+                class="form-input"
+                type="checkbox"
+                name="travel"
+                id="hobby"
+              />
+              <label class="form-label" for="movies">Movies</label>
+              <input
+                class="form-input"
+                type="checkbox"
+                name="movies"
+                id="hobby"
+              />
+            </div>
+          </div>
+
+          <div class="main-source-income">
+            <label class="form-label" class="form-label" for="source-income"
+              >Source-income</label
+            >
+            <select class="form-input" name="sourse-icome" id="sourse-icome">
+              <option value="employed">Employed</option>
+              <option value="freelance">Freelance</option>
+            </select>
+          </div>
+
+          <div class="main-income">
+            <label class="form-label"
+              >Income
+              <input
+                class="form-input"
+                type="range"
+                id="rangeInput"
+                name="rangeInput"
+                min="10"
+                max="100"
+                value="20"
+                oninput="amount.value=rangeInput.value"
+              />
+            </label>
+            <span class="outputrange">
+              <output id="amount" name="amount" for="rangeInput">20</output>K
+            </span>
+          </div>
+
+          <div class="main-upload-pictures">
+            <label class="form-label" for="upload-pictures"
+              >Upload-pictures</label
+            >
+            <input class="form-input" type="file" id="upload-pictures" />
+          </div>
+
+          <div class="main-age">
+            <label class="form-label" for="age">Age</label>
+            <input class="form-input" type="number" id="age" min="5" max="85" />
+          </div>
+
+          <div class="fullsize-input">
+            <label class="form-label" for="bio">Bio</label>
+            <textarea
+              class="form-input"
+              name="bio"
+              id="main-bio"
+              cols="30"
+              rows="10"
+              class="bio-text"
+            ></textarea>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        <button class="button" type="submit">Create</button>
+      </footer>
+    </div>
+  </body>
+</html>
