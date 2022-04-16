@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body class="container">
+<div class="registration">
+    <header class="header">
+        <h1 class="header-create-account">Create account</h1>
+    </header>
+    <main class="main">
+        <form action="#" class="form-registration" method="post">
+            <div class="main-firstname">
+                <label class="form-label" for="firstname">Firstname</label>
+                <input class="form-input" id="firstname" type="text"/>
+            </div>
+
+            <div class="main-lastname">
+                <label class="form-label" for="lastname">Lastname</label>
+                <input class="form-input" id="lastname" type="text"/>
+            </div>
+
+            <div class="fullsize-input">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" type="email"/>
+            </div>
+
+            <div class="main-password">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" id="password" type="password"/>
+            </div>
+
+            <div class="main-confirm-password">
+                <label class="form-label" for="confirm-password"
+                >Confirm-password</label
+                >
+                <input class="form-input" id="confirm-password" type="password"/>
+            </div>
+
+            <div class="main-gender">
+                <label class="form-label">Gender</label>
+                <div class="options">
+                    <label for="male">Male</label>
+                    <input checked id="male" name="gender" type="radio"/>
+                    <label class="form-label" for="female">Female</label>
+                    <input
+                            class="form-input"
+                            id="female"
+                            name="gender"
+                            type="radio"
+                    />
+                </div>
+            </div>
+
+            <div class="main-hobbies">
+                <label>Hobbies</label>
+                <div class="options">
+                    <label class="form-label" for="music">Music</label>
+                    <input
+                            class="form-input"
+                            id="hobby"
+                            name="music"
+                            type="checkbox"
+                    />
+                    <label class="form-label" for="sports">Sports</label>
+                    <input
+                            class="form-input"
+                            id="hobby"
+                            name="sports"
+                            type="checkbox"
+                    />
+                    <label class="form-label" for="travel">Traver</label>
+                    <input
+                            class="form-input"
+                            id="hobby"
+                            name="travel"
+                            type="checkbox"
+                    />
+                    <label class="form-label" for="movies">Movies</label>
+                    <input
+                            class="form-input"
+                            id="hobby"
+                            name="movies"
+                            type="checkbox"
+                    />
+                </div>
+            </div>
+
+            <div class="main-source-income">
+                <label class="form-label" class="form-label" for="source-income"
+                >Source-income</label
+                >
+                <select class="form-input" id="sourse-icome" name="sourse-icome">
+                    <option value="employed">Employed</option>
+                    <option value="freelance">Freelance</option>
+                </select>
+            </div>
+
+            <div class="main-income">
+                <label class="form-label"
+                >Income
+                    <input
+                            class="form-input"
+                            id="rangeInput"
+                            max="100"
+                            min="10"
+                            name="rangeInput"
+                            oninput="amount.value=rangeInput.value"
+                            type="range"
+                            value="20"
+                    />
+                </label>
+                <span class="outputrange">
+              <output for="rangeInput" id="amount" name="amount">20</output>K
+            </span>
+            </div>
+
+            <div class="main-upload-pictures">
+                <label class="form-label" for="upload-pictures"
+                >Upload-pictures</label
+                >
+                <input class="form-input" id="upload-pictures" type="file"/>
+            </div>
+
+            <div class="main-age">
+                <label class="form-label" for="age">Age</label>
+                <input class="form-input" id="age" max="85" min="5" type="number"/>
+            </div>
+
+            <div class="fullsize-input">
+                <label class="form-label" for="bio">Bio</label>
+                <textarea
+                        class="form-input"
+                        class="bio-text"
+                        cols="30"
+                        id="main-bio"
+                        name="bio"
+                        rows="10"
+                ></textarea>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <button class="button" type="submit">Create</button>
+    </footer>
+</div>
+</body>
+</html>

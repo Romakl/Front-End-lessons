@@ -1,0 +1,82 @@
+/*Цвет основного фона*/
+.content{
+	background-color: #333;
+}
+/*Цвет фона с анимашкой и выравнивание по центру относительно Y кординат*/
+.container{
+	display: flex;
+	background-color: rgb(45, 45, 45);
+	align-items: center;
+	overflow: hidden;
+	height: 500px;
+	width: 100%;
+	gap: 10px;
+}
+/*Равное удаление между едой*/
+.parts{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	animation: eat 1s linear infinite;
+}
+/*"Оживил" Div элементы и сделал их кружками еды)*/
+.parts::before{
+	content: "";
+	background-color: white;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+/*Анимашка для Еды*/
+@keyframes eat{
+	0%{
+		transform: translateX(50%);
+	}
+	100%{
+		transform: translateX(-50%);
+	}
+}
+.pacman{
+	z-index: 1;
+	background-color: transparent;
+	position: relative;
+}
+/*Поделил пакмена на нижнюю челюсть и верхнюю*/
+.pacman::before, .pacman::after{
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	height: 0px;
+	width: 0px;
+}
+/*Создал вернюю челюсть и Анимашка для верхней челюсти*/
+.pacman::before{
+	animation: mouth-top 0.5s ease infinite;
+	border: 50px solid yellow;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+}
+@keyframes mouth-top {
+	0%, 100%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(45deg);
+	}
+}
+/*Создал нижнюю челюсть и Анимашка для нижней челюсти*/
+.pacman::after{
+	animation: mouth-bottom 0.5s ease infinite;
+	border: 50px solid yellow;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+@keyframes mouth-bottom {
+	0%, 100%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(-45deg);
+	}
+}
